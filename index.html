@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        header {
+            background-color: #d8aaff;
+            padding: 3px;
+            text-align: center;
+            color: red;
+            font-family: 'Waltograph', cursive;
+        }
+
+        header a {
+            margin-right: 10px;
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        header a:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+        .left {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            background-color: #ffb6c1;
+            padding: 5px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes neon {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00e0, 0 0 70px #ff00e0, 0 0 80px #ff00e0, 0 0 100px #ff00e0, 0 0 150px #ff00e0;
+            }
+
+            50% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00e0, 0 0 35px #ff00e0, 0 0 40px #ff00e0, 0 0 50px #ff00e0, 0 0 75px #ff00e0;
+            }
+
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00e0, 0 0 70px #ff00e0, 0 0 80px #ff00e0, 0 0 100px #ff00e0, 0 0 150px #ff00e0;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: neon 1s infinite alternate;
+            color: #ff00e0;
+        }
+
+        .background-image {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('./img 0.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .about-us-text {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            max-width: 90%;
+            margin: 20px auto;
+            overflow-y: scroll;
+            max-height: 70vh;
+        }
+
+        .shop-now-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: skyblue;
+            background-color: brown;
+            border: 2px solid brown;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .shop-now-button:hover {
+            color: brown;
+            background-color: skyblue;
+            animation: glow 1s ease infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px skyblue, 0 0 20px skyblue, 0 0 30px skyblue, 0 0 40px skyblue, 0 0 70px skyblue, 0 0 80px skyblue, 0 0 100px skyblue, 0 0 150px skyblue;
+            }
+
+            to {
+                text-shadow: 0 0 20px brown, 0 0 30px brown, 0 0 40px brown, 0 0 70px brown, 0 0 80px brown, 0 0 100px brown, 0 0 150px brown, 0 0 300px brown;
+            }
+        }
+
+        .shop-now-interface {
+            text-align: center;
+        }
+
+        .shop-now-interface img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .update-button {
+            display: none;
+        }
+
+        <style>
+    /* Center images on mobile screens */
+    @media (max-width: 768px) {
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+</style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left"></div>
+        <div class="right">
+            <a href="#" onclick="alert('Welcome !!!'); return false;">Home</a>
+            <a href="#" onclick="alert('Scroll down!'); return false;">About</a>
+            <a href="#" onclick="alert('Feel free to text us on the numbers provided below :>'); return false;">Contact</a>
+        </div>
+        <div class="clear"></div>
+        <h1 style="color: red; font-weight: bold; font-size: 36px;">R.A TRADERS</h1>
+    </header>
+    <footer>
+        <p>Contact Us: +923197346370, +923418643170</p>
+        <p>Company's Owners: ADNAN RASHEED,TAUSEEF RASHEED</p>
+        <p>Join Our WhatsApp Group: <a href="https://chat.whatsapp.com/JRVOlazOBy87IqtwiPPUCQ" target="_blank">https://chat.whatsapp.com/EGi0mTmx2pG8XeBNdiFMa5</a></p>
+    </footer>
+
+    <div class="background-image"></div>
+    <div class="about-us-text">
+        <p><strong>About R.A Traders Online Shopping</strong></p>
+        <p>Welcome to R.A Traders Online Shopping, your ultimate destination for an unparalleled shopping experience! As an innovative online platform, R.A Traders offers a diverse range of products to cater to your every need, from fashion and electronics to home essentials and more. With a commitment to quality, convenience, and customer satisfaction, we strive to make your online shopping journey seamless and enjoyable.</p>
+        <p><strong>Our Vision</strong></p>
+        <p>At R.A Traders, our vision is to revolutionize the online shopping experience by providing our customers with access to a wide array of high-quality products at competitive prices. We aim to create a platform that not only meets but exceeds the expectations of our customers, offering a one-stop solution for all their shopping needs.</p>
+        <p><strong>Our Mission</strong></p>
+        <p>Our mission is to be the preferred choice for online shopping by offering a curated selection of products, exceptional customer service, and a user-friendly shopping experience. We are dedicated to building long-lasting relationships with our customers based on trust, reliability, and transparency.</p>
+        <p><strong>Why Choose R.A Traders Online Shopping?</strong></p>
+        <ul>
+            <li>Extensive Product Range: Explore a vast collection of products across multiple categories, all in one convenient location.</li>
+            <li>Quality Assurance: We source our products from reputable suppliers to ensure that every item meets our high standards of quality and authenticity.</li>
+            <li>Competitive Prices: Enjoy competitive prices on all our products, with regular discounts and promotions to help you save even more.</li>
+            <li>Secure Payment Options: Shop with confidence using our secure payment gateways, ensuring a safe and secure transaction every time.</li>
+            <li>Convenient Delivery: Benefit from fast and reliable delivery services, ensuring that your order reaches you in a timely manner.</li>
+            <li>Excellent Customer Service: Our dedicated customer service team is here to assist you with any queries or concerns you may have, providing you with a seamless shopping experience from start to finish.</li>
+        </ul>
+        <p><strong>Join Us Today!</strong></p>
+        <p>Experience the future of online shopping with R.A Traders Online Shopping. Browse our extensive collection of products, place your order with ease, and enjoy the convenience of doorstep delivery. Join us today and embark on a journey of endless shopping possibilities!</p>
+    </div>
+    <form id="name-form" style="text-align: center;">
+        <p style="font-weight: bold; font-size: 24px; color: red;">Enter your name here: <input type="text" id="name-input" required></p>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="greeting-message" style="text-align: center; font-weight: bold; font-size: 24px; color: red;"></p>
+
+    <a href="#" class="shop-now-button" onclick="showShopNowInterface(); return false;">SHOP NOW</a>
+
+    <div class="shop-now-interface" id="shop-now-interface">
+        <!-- Image containers with update buttons -->
+        <!-- Display images 1 to 50 -->
+         <div>
+        <img src="./img 1.jpg" alt="">
+                                    </div>
+                            <div>
+                                <img src="./img 2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 3.jpg" alt="">
+                            </div>
+                            <!-- Display images from 4 to 50 -->
+                            <div>
+                                <img src="./img 4.jpg" alt="">
+                            </div>
+                                <img src="./img 5.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 6.jpg" alt="">
+                            </div>
+                            <!-- Display images from 4 to 50 -->
+                            <div>
+                                <img src="./img 4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 5.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 6.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 7.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 8.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 9.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 10.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 11.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 12.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 13.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 14.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 15.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 16.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 17.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 18.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 19.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 20.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 21.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 22.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 23.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 24.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 25.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 26.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 27.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 28.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 29.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 30.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 31.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 32.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 33.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 34.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 35.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 36.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 37.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 38.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 39.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 40.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 41.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 42.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 43.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 44.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 45.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 46.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 47.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 48.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 49.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 50.jpg" alt="">
+                            </div>
+                            <!-- Display images from 51 to 100 -->
+                            <div>
+                                <img src="./img 51.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 52.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 53.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 54.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 55.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 56.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 57.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 58.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 59.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 60.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 61.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 62.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 63.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 64.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 65.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 66.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 67.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 68.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 69.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 70.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 71.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 72.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 73.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 74.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 75.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 76.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 77.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 78.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 79.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 80.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 81.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 82.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 83.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 84.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 85.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 86.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 87.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 88.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 89.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 90.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 91.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 92.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 93.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 94.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 95.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 96.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 97.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 98.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 99.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="./img 100.jpg" alt="">
+                            </div>
+                            <style>
+                                /* Center images on mobile screens */
+                                @media (max-width: 768px) {
+                                    body {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                    }
+                            
+                                    img {
+                                        max-width: 100%;
+                                        height: auto;
+                                    }
+                                }
+
+                                <style>
+    /* Center images on mobile screens */
+    @media (max-width: 768px) {
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+    }
+</style>
+
+                            </style>
+    <script>
+        // Function to show the shop now interface
+        function showShopNowInterface() {
+            document.getElementById('shop-now-interface').style.display = 'block';
+        }
+
+        // Function to handle file input change and update image
+        function handleFileInputChange(event, imageId) {
+            var file = event.target.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById(imageId).src = e.target.result;
+                    // Save the image URL to localStorage to persist changes
+                    localStorage.setItem(imageId, e.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Add event listeners to file inputs
+        document.querySelectorAll('.update-button').forEach(function (button, index) {
+            var fileInputId = 'file-input-' + (index + 1);
+            button.addEventListener('click', function () {
+                document.getElementById(fileInputId).click();
+            });
+            document.getElementById(fileInputId).addEventListener('change', function (event) {
+                handleFileInputChange(event, 'image-' + (index + 1));
+            });
+            // Check if there's a saved image for this index and display it
+            var savedImage = localStorage.getItem('image-' + (index + 1));
+            if (savedImage) {
+                document.getElementById('image-' + (index + 1)).src = savedImage;
+            }
+        });
+
+        // Check if there's a saved image for each image and display it
+        for (var i = 1; i <= 50; i++) {
+            var savedImage = localStorage.getItem('image-' + i);
+            if (savedImage) {
+                document.getElementById('image-' + i).src = savedImage;
+            }
+        }
+
+        // Form submission handling
+        document.getElementById('name-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var name = document.getElementById('name-input').value;
+            if (name === 'Brothers098') {
+                document.getElementById('greeting-message').innerHTML = '<span style="color: orange; font-weight: bold;">Dear Admin! Now you can update the images you want :></span>';
+                document.querySelectorAll('.update-button').forEach(function (button) {
+                    button.style.display = 'inline-block';
+                });
+            } else {
+                document.getElementById('greeting-message').textContent = 'AOA ' + name + '! Good to see you :)';
+            }
+        });
+    </script>
+</body>
+
+</html>
+
