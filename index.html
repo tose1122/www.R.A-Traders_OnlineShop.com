@@ -85,21 +85,29 @@
             animation: neon 1s infinite alternate;
             color: #ff00e0;
         }
-
-        .background-image { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-image: url('./img 0.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; z-index: -1; }
-
-        .about-us-text {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            max-width: 90%;
-            margin: 20px auto;
-            overflow-y: scroll;
-            max-height: 70vh;
+.background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: calc(100vh - 60px); /* Adjust the value (60px) based on your header height */
+            background: url('img 0.jpg') center/contain no-repeat;
+            z-index: -1;
         }
+        
+        .about-us-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 20px auto; /* Adjust the margin-top value to move it down */
+    overflow-y: scroll;
+    max-height: 70vh;
+    margin-top: 95%;
+}
 
         .shop-now-button {
             display: block;
