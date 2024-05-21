@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Display</title>
+    <style>
+        body {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <img src="img 0.1.jpg" alt="">
+    <img src="img 0.2.jpg" alt="">
+    <div style="color: red; font-size: 24px;">ENTER MOBILE NUMBER: <input type="text" id="mobileNumber"></div>
+    <div style="color: red; font-size: 24px;">ENTER LOTTERY NUMBER: <input type="text" id="lotteryNumber"></div>
+    <button onclick="checkNumbers()">Submit</button>
+    <script>
+        function checkNumbers() {
+            var mobileNumber = document.getElementById("mobileNumber").value;
+            var lotteryNumber = document.getElementById("lotteryNumber").value;
+
+            if (mobileNumber !== "03033131085" || lotteryNumber !== "6565") {
+                showError("Incorrect mobile number or lottery number. Please try again.");
+            } else {
+                showCongratulations();
+            }
+        }
+
+        function showError(errorMessage) {
+            var errorDiv = document.createElement("div");
+            errorDiv.style.color = "red";
+            errorDiv.style.fontSize = "24px";
+            errorDiv.textContent = errorMessage;
+            document.body.appendChild(errorDiv);
+        }
+
+        function showCongratulations() {
+            // Redirect to winner.html
+            window.location.href = "winner.html";
+        }
+    </script>
+</body>
+</html>
+
+
+
